@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>AracSatisKiralama</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>AracIlan</servlet-name>
+    <servlet-class>main.AracIlan</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AracIlan</servlet-name>
+    <url-pattern>/aracilan.ek</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MusteriKayit</servlet-name>
+    <servlet-class>main.MusteriKayit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MusteriKayit</servlet-name>
+    <url-pattern>/musterikayit.ek</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PersonelKayit</servlet-name>
+    <servlet-class>main.PersonelKayit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PersonelKayit</servlet-name>
+    <url-pattern>/personelkayit.ek</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Giris</servlet-name>
+    <servlet-class>main.Giris</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Giris</servlet-name>
+    <url-pattern>/giris.ek</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AnasayfaGiris</servlet-name>
+    <servlet-class>main.AnasayfaGiris</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AnasayfaGiris</servlet-name>
+    <url-pattern>/anasayfagiris.ek</url-pattern>
+  </servlet-mapping>
+ 
+
+</web-app>
